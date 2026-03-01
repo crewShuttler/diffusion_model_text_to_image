@@ -31,7 +31,7 @@ python generate_image.py "a cinematic photo of a futuristic city at sunset" \
 > Note: The first run downloads model weights from Hugging Face.
 In this repository diffusion model architectures are used to generated images data. The diffusion model takes as input the text data and processes text input embedding to generated images or video data.
 
-More info on diffusion architectures - in progress
+Diffusion models network architectures used- in progress
 
 Datasets used explanation:
 
