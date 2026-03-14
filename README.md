@@ -10,6 +10,33 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+
+## Create a continuous sequence from a 3D point cloud
+
+Use `point_cloud_sequence.py` to transform an unordered point cloud into an ordered, continuous trajectory.
+
+```bash
+python point_cloud_sequence.py data/object_points.xyz \
+  --output outputs/object_path.xyz \
+  --start-index 0 \
+  --spacing 0.01
+```
+
+### Point-cloud input format
+
+- One 3D point per line
+- Either space-separated (`x y z`) or comma-separated (`x,y,z`)
+- Empty lines and lines starting with `#` are ignored
+
+Example:
+
+```text
+# x y z
+0.0 0.0 0.0
+0.5,0.0,0.1
+1.0 0.1 0.2
+```
+
 ## Usage
 
 ```bash
